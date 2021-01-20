@@ -1,0 +1,17 @@
+div {
+    margin:20px;
+
+}
+.row {
+    float:left;
+    width:350px;
+}
+
+.card img {
+    width:300px;
+}
+
+.row-card {
+    display:flex;
+    justify-content:;
+}
