@@ -6,10 +6,10 @@ function Product() {
    
     return (
         <div className="row" >
-            <h1> Nama Product </h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, incidunt. Velit quod aspernatur nobis sit!</p>
-            <h2> Harga 2.000 </h2>  
-            <button className="btn btn-primary" onClick={() => setCount(count + 1)}> Tambah Keranjang </button>
+            <h1> Lightworks Full Version</h1>
+            <p> The Best Video Editor For Windows, Linux, Mac OS</p>
+            <h2> Price : $99.00 </h2>  
+            <button className="btn btn-success btn-outlined" onClick={() => setCount(count + 1)}> Tambah Keranjang </button>
         </div>
     )
 }

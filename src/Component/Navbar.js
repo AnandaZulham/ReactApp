@@ -5,11 +5,14 @@ import {useContext} from 'react'
 function Navbar() {
     const {count} = useContext(CardContext)
     return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
-                <li className="nav-item active">
-                    <Link to="/" className="nav-link text-info"> Home </Link>
+    <nav className="navbar navbar-expand-xs navbar-light bg-light  mt-5">
+    	<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent">
+    	  <span className="navbar-toggler-icon"></span>
+    	</button>
+        <div className="collapse navbar-collapse" id="navbarcontent">
+            <ul className="navbar-nav me-auto">
+                <li className="nav-item">
+                    <Link to="/" className="nav-link text-danger"> Home </Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/SubProduct" className="nav-link text-info"> SubProduct </Link>
@@ -21,14 +24,10 @@ function Navbar() {
                     <Link to="/Todolist1" className="nav-link text-info"> TodoList </Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/Axios" className="nav-link text-info"> Axios </Link>
-                </li>
-                
-                <li className="nav-item">
                     <Link to="/ButtonToggle" className="nav-link text-info"> Button </Link>
                 </li>
                 <li className="nav-item">
-                    <button className="btn btn-danger"> {count}</button>
+                    <button className="btn btn-danger">{count}</button>
                 </li>
             </ul>
         </div>

@@ -1,7 +1,3 @@
-div {
-    margin:20px;
-
-}
 .row {
     float:left;
     width:350px;
@@ -13,5 +9,8 @@ div {
 
 .row-card {
     display:flex;
-    justify-content:;
+}
+
+.nav-item {
+	color: black
 }

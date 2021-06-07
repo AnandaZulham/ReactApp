@@ -3,21 +3,21 @@ import React from 'react';
 class ToDoList extends React.Component {
     constructor(){
     super()
-    this.state= {
+    this.state = {
         inputItem : '',
         items : []
     }
     }
     
     handleSubmit = (e) => {
-    e.preventDefault();
-    this.setState({
-    items : [...this.state.items, this.state.inputItem],
-    inputItem : ''
-    })
-    if(this.state.inputItem === '') {
-        return alert("Kosong");
-    }
+ 	   e.preventDefault();
+  	   this.setState({
+		    items : [...this.state.items, this.state.inputItem],
+    		inputItem : ''
+    	})
+    	if(this.state.inputItem === '') {
+        	return null;
+    	}
 }
     
     handleChange = (e) => {
@@ -27,13 +27,12 @@ class ToDoList extends React.Component {
 }
     
     render() {
-
         return (
-        <div className="todolist1">
-        <h2> TodoList 1 </h2>
-            <input  onChange ={this.handleChange} placeholder="Masukkan Nama" className="form-control input-group-sm"  />
-        <button onClick={this.handleSubmit} className="btn btn-primary"> Add </button>
-        <List items={this.state.items}  />
+        <div className="container">
+        	<h2>TodoList</h2>
+        	<input onChange ={this.handleChange} placeholder="username" className="form-control input-group-sm"/>
+        	<button onClick={this.handleSubmit} className="btn btn-primary mt-3"> Add user </button>
+        	<List items={this.state.items}  />
         </div>
         )
     }
