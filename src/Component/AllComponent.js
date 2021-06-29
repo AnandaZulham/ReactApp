@@ -8,6 +8,7 @@ import Navbar from './Navbar';
 import SubProduct from './Hooks/Product/Product';
 import ButtonToggle from './Button'
 import UseReducer from './Hooks/UseReducer'
+import TableComponent from './TableComponent'
 
 function AllComponent() {
     const [count, setCount] = useState(12);
@@ -32,8 +33,10 @@ function AllComponent() {
                 <Route path="/ButtonToggle" component={ButtonToggle}>
                 </Route>
                 <Route path="/UseReducer">
-                	<UseReducer />
+                    <UseReducer />
                 </Route>
+	    	<Route path="/TableComponent" component={TableComponent}>
+	    	</Route>
             </Switch>
         </CardContext.Provider>
         </div>

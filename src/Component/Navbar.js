@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom';
 import {CardContext} from './Hooks/CardContext'
 import {useContext} from 'react'
 
+
 function Navbar() {
     const {count} = useContext(CardContext)
     return (
@@ -11,23 +12,26 @@ function Navbar() {
     	  <span className="navbar-toggler-icon"></span>
     	</button>
         <div className="collapse navbar-collapse" id="navbarcontent">
-            <ul className="navbar-nav me-auto">
-                <li className="nav-item">
-                    <Link to="/" className="nav-link text-danger"> Home </Link>
+            <ul className="navbar-nav mr-auto">
+                <li className="nav-item p-2">
+                    <Link to="/" className="nav-link"> Home </Link>
                 </li>
-                <li className="nav-item">
-                    <Link to="/SubProduct" className="nav-link text-info"> SubProduct </Link>
+                <li className="nav-item p-2">
+                    <Link to="/SubProduct" className="nav-link"> SubProduct </Link>
                 </li>
-                <li className="nav-item">
-                    <Link to="/Timer" className="nav-link text-info"> Timer </Link>
+                <li className="nav-item p-2">
+                    <Link to="/Timer" className="nav-link"> Timer </Link>
                 </li>
-                <li className="nav-item">
-                    <Link to="/Todolist1" className="nav-link text-info"> TodoList </Link>
+                <li className="nav-item p-2">
+                    <Link to="/Todolist1" className="nav-link"> TodoList </Link>
                 </li>
-                <li className="nav-item">
-                    <Link to="/ButtonToggle" className="nav-link text-info"> Button </Link>
+                <li className="nav-item p-2">
+                    <Link to="/ButtonToggle" className="nav-link"> Button </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item p-2">
+                    <Link to="/TableComponent" className="nav-link"> TableComponent </Link>
+                </li>
+	    	<li className="nav-item p-2">
                     <button className="btn btn-danger">{count}</button>
                 </li>
             </ul>
