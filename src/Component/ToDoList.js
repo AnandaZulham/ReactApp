@@ -10,14 +10,14 @@ class ToDoList extends React.Component {
     }
     
     handleSubmit = (e) => {
- 	   e.preventDefault();
-  	   this.setState({
-		    items : [...this.state.items, this.state.inputItem],
-    		inputItem : ''
-    	})
-    	if(this.state.inputItem === '') {
-        	return null;
+ 	e.preventDefault();
+	if(this.state.inputItem === '') {
+           return;
     	}
+  	this.setState({
+	  items: [...this.state.items, this.state.inputItem],
+	  inputItem: ''
+    	})
 }
     
     handleChange = (e) => {
@@ -31,8 +31,8 @@ class ToDoList extends React.Component {
         <div className="container">
         	<h2>TodoList</h2>
         	<input onChange ={this.handleChange} placeholder="username" className="form-control input-group-sm"/>
-        	<button onClick={this.handleSubmit} className="btn btn-primary mt-3"> Add user </button>
-        	<List items={this.state.items}  />
+        	<button onClick={this.handleSubmit} className="btn btn-primary mt-3 mb-4"> Add user </button>
+        	<List items={this.state.items} />
         </div>
         )
     }
@@ -44,7 +44,7 @@ function List(props) {
     <ul className="list-group">
         {
         props.items.map((item,index) => 
-            <li class="list-group-item" key={index}>{item}</li>
+            <li className="list-group-item" key={index}>{item}</li>
         )
         }
     </ul>
