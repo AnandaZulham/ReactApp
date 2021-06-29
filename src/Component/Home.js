@@ -1,8 +1,7 @@
 function Home() {
     return (
         <div>
-            <h1>This is Home Page</h1>
-            <button className="btn btn-danger">Click me </button>
+            <h3 className="text-center mt-4 text-black">Learn React JS + Bootstrap</h3>
          </div>
     )
 }
