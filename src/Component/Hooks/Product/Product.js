@@ -3,23 +3,33 @@ import {CardContext} from '../CardContext'
 
 function Product() {
     const {count, setCount} = useContext(CardContext);
-   
     return (
-        <div className="row" >
-            <h1> Lightworks Full Version</h1>
-            <p> The Best Video Editor For Windows, Linux, Mac OS</p>
-            <h2> Price : $99.00 </h2>  
-            <button className="btn btn-success btn-outlined" onClick={() => setCount(count + 1)}> Tambah Keranjang </button>
-        </div>
+	      <div className="card h-100">
+	    <img src="https://cdn.pixabay.com/photo/2014/09/27/13/45/notebook-463490_640.jpg" className="card-img-top w-100" alt="Laptop Asus" />
+	       <div className="card-body">
+            <h5 className="card-title">Laptop Asus</h5>
+            <p className="card-text">Asus Vivobook 14 with Intel core i7 16GB RAM 1TB SSD</p>
+            <h6>Price : $99.00</h6>  
+            <button className="btn btn-success btn-outlined btn-sm" onClick={() => setCount(count + 1)}><i className="bi bi-cart"></i> Add To Cart</button>
+	       </div>
+	    </div>
     )
 }
 
 function SubProduct() {
     return (
-    <div>
-        <Product />
-        <Product />
-        <Product />
+    <div className="container mt-3">
+	<div className="row row-cols-1 row-cols-md-2 g-2">
+	    <div className="col">
+	      <Product />
+	    </div>
+	    <div className="col">
+	      <Product />
+	    </div>
+	    <div className="col">
+	      <Product />
+	    </div>
+	</div>
     </div>
     )
 }
