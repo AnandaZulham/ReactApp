@@ -5,6 +5,7 @@ import {useContext} from 'react'
 function Navbar() {
     const {count} = useContext(CardContext)
     return (
+	    <div className="container">
     <nav className="navbar navbar-expand-xs navbar-light bg-light  mt-5">
     	<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent">
     	  <span className="navbar-toggler-icon"></span>
@@ -32,6 +33,7 @@ function Navbar() {
             </ul>
         </div>
     </nav>
+	    </div>
     )
 }
 
