@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import {CardContext} from './Hooks/CardContext';
-import './style.css'
 import Home from './Home'
 import Timer from './Timer';
 import ToDoList from './ToDoList';
@@ -14,7 +13,7 @@ function AllComponent() {
     const [count, setCount] = useState(12);
     return (
         <BrowserRouter>
-        <div className="container">
+        <div>
         <CardContext.Provider value={{count,setCount}}>
             <Navbar />
             <Switch>
