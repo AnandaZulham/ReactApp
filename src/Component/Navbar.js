@@ -31,6 +31,9 @@ function Navbar() {
                 <li className="nav-item p-2">
                     <Link to="/TableComponent" className="nav-link"> TableComponent </Link>
                 </li>
+				<li className="nav-item p-2">
+					<Link to="/UseReducer" className="nav-link"> UseReducer</Link>
+				</li>
 	    	<li className="nav-item p-2">
                     <button className="btn btn-danger">{count}</button>
                 </li>
