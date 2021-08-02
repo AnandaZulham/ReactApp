@@ -35,7 +35,7 @@ function Navbar() {
 					<Link to="/UseReducer" className="nav-link"> UseReducer</Link>
 				</li>
 	    	<li className="nav-item p-2">
-                    <button className="btn btn-danger">{count}</button>
+                    <button className="btn btn-danger text-light" disabled>{count}</button>
                 </li>
             </ul>
         </div>

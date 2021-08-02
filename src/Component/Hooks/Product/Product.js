@@ -10,7 +10,7 @@ function Product() {
             <h5 className="card-title">Laptop Asus</h5>
             <p className="card-text">Asus Vivobook 14 with Intel core i7 16GB RAM 1TB SSD</p>
             <h6>Price : $99.00</h6>  
-            <button className="btn btn-success btn-outlined btn-sm" onClick={() => setCount(count + 1)}><i className="bi bi-cart"></i> Add To Cart</button>
+            <button className="btn btn-success btn-md d-inline-block text-primary my-3" onClick={() => setCount(count + 1)}><i className="bi bi-cart"></i> Add To Cart</button>
 	       </div>
 	    </div>
     )

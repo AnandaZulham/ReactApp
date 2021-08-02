@@ -9,7 +9,7 @@ function ButtonToggle () {
         console.log(status)
     return (
     <div>
-        <button onClick={buttonOnOff} className="btn btn-info"> {status ? "ON" : "OFF"} </button> 
+        <button onClick={buttonOnOff} className="btn btn-info m-4"> {status ? "ON" : "OFF"} </button> 
     </div>
     )
 }
