@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import AllComponent from './Component/AllComponent';
-import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import './css/main.css'
 
 ReactDOM.render(
   <React.Fragment>
